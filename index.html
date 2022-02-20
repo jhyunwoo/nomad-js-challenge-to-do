@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>CNSA To Do List</title>
+  </head>
+  <body id="bg">
+    <h2 id="clock">00:00:00</h2>
+    <div id="weather">
+      <span>Weather</span>
+      <br />
+      <span></span>
+    </div>
+    <form class="hidden" id="login-form">
+      <input
+        type="input"
+        class="form__field"
+        placeholder="What is your name?"
+        name="name"
+        id="name"
+        required
+      />
+      <label for="name" class="form__label">What is your name?</label>
+    </form>
+    <h1 class="hidden" id="greeting"></h1>
+    <form id="todo-form">
+      <input
+        type="input"
+        class="form__field"
+        placeholder="Write a To Do here"
+        name="todo"
+        id="todo"
+        required
+      />
+      <label for="todo" class="form__label">Write a To Do here</label>
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="quote">
+      <span></span>
+      <br />
+      <br />
+      <span id="person"></span>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
